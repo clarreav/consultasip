@@ -1,6 +1,5 @@
 import ipinfo
 import time
-import asyncio
 
 
 # Metodo para la consulta de informacion sobre una IP.
@@ -12,6 +11,7 @@ def consultaip(token, ip):
     # Conversion del objeto Detalles a diccionario
     diccionario = dict(details.all)
     return diccionario, time.perf_counter()
+
 
 # Metodo para consulta paralela de IPs por forma de batch
 def consultabatch(token, ips):
